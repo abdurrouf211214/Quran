@@ -4,86 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@android:color/background_light"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:text="@string/a.bc"
+        android:textColor="@color/colorbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:text="@string/a.tb"
+        android:textColor="@color/colorbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:text="@string/a.pn"
+        android:textColor="@color/colorbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:text="@string/a.js"
+        android:textColor="@color/colorbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:text="@string/a.pr"
+        android:textColor="@color/colorbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/qurani_desc"
+        android:layout_width="243dp"
+        android:layout_height="86dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158"
-        app:srcCompat="@mipmap/icon_qurani" />
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/bg2" />
 
-    <Button
-        android:id="@+id/baca"
-        android:layout_width="100pt"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="@string/baca_qur_an"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="416dp"
+        android:layout_height="814dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.063" />
-
-    <Button
-        android:id="@+id/terakhirbaca"
-        android:layout_width="100pt"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="@string/terakhir_baca"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/baca"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/baca"
-        app:layout_constraintTop_toBottomOf="@+id/baca"
-        app:layout_constraintVertical_bias="0.054" />
-
-    <Button
-        android:id="@+id/pencarian"
-        android:layout_width="100pt"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="@string/pencarian"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/terakhirbaca"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/terakhirbaca"
-        app:layout_constraintTop_toBottomOf="@+id/terakhirbaca"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <Button
-        android:id="@+id/jadwal"
-        android:layout_width="100pt"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="@string/jadwal_sholat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/pencarian"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pencarian"
-        app:layout_constraintTop_toBottomOf="@+id/pencarian"
-        app:layout_constraintVertical_bias="0.117" />
-
-    <Button
-        android:id="@+id/pengaturan"
-        android:layout_width="100pt"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8BC34A"
-        android:text="@string/pengaturan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/jadwal"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/jadwal"
-        app:layout_constraintTop_toBottomOf="@+id/jadwal"
-        app:layout_constraintVertical_bias="0.19" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
